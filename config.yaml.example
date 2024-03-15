@@ -1,0 +1,29 @@
+---
+## Required
+journal-type: print # change to systemctl to log outputs to systemctl
+command-prefix: $ # Sets what symbol is used to trigger the bot
+
+## Features
+# ollama: true
+# stable-diffusuion: true
+#discord-status: "Game"
+
+## Commands
+jimin: True
+
+## Bot replies when an emoji is used on it's own.
+emoji-reply:
+  - "<ExampleEmoji>"
+
+## Looks for a substring (detect) and replies 
+detect-message:
+  - message:
+    - detect: "Detect this message"
+    - replies:
+      - "Reply 1"
+      - "Reply 2"
+
+# Converts Twitter Links into vxtwitter links
+vxtwitter: True
+
+
