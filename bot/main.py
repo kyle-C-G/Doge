@@ -21,7 +21,7 @@ async def on_ready() -> None:
 
     # Add Status
     if config.check_discord_status:
-        await bot.change_presence(status=discord.Status.online, activity=discord.Game(config.discord_status))
+        await bot.change_presence(status=discord.Status.online, activity=discord.Game(config.get_discord_status()))
     else:
         await bot.change_presence(status=discord.Status.online)
 

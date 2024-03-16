@@ -17,11 +17,14 @@ emoji-reply:
 
 ## Looks for a substring (detect) and replies 
 detect-message:
-  - message:
-    - detect: "Detect this message"
-    - replies:
+  - detect: "Detect this message"
+    replies:
       - "Reply 1"
       - "Reply 2"
+  - detect: "Detect this too"
+    replies:
+      - "Reply 3"
+      - "Reply 4"
 
 # Converts Twitter Links into vxtwitter links
 vxtwitter: True
